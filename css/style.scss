@@ -1,0 +1,30 @@
+@import "bootstrap.css";
+@import "bootstrap-grid.css";
+@import "bootstrap-reboot.css";
+@import "bootstrap-reboot.min.css";
+
+.id {
+  top: 10px;
+  right: 10px;
+}
+
+.card{
+   transition: .3s;
+ }
+
+.card:hover {
+  transform: scale(1.1, 1.1);
+  transition: .3s;
+}
+
+
+.remove {
+  display: none;
+  position: absolute;
+  top: 5px;
+  right: 60px;
+}
+
+.hover:hover btn {
+  display: block;
+}
