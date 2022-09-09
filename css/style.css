@@ -4,3 +4,20 @@
 @import "bootstrap-reboot.min.css";
 
 /*# sourceMappingURL=style.css.map */
+
+
+.square_item{
+    border: solid 2px black;
+    width: 200px;
+    height: 200px;
+    justify-content: center;
+    display: flex;
+}
+.square_item span{
+    display: block;
+    align-self: center;
+    }
+
+.active_square{
+    background-color: #ec6464;
+}

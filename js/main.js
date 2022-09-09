@@ -1,10 +1,10 @@
-document.addEventListener('DOMContentLoaded', function (){
+let squares = document.querySelector('.square_items')
+squares.addEventListener('click', (event)=>{
+    if (event.target.closest('.square_item') && !event.target.closest('.square_item').classList.contains('active_square')) {
+        event.target.closest('.square_item').classList.add('active_square')
+        squares.append(event.target.closest('.square_item'))
 
-    let cont = document.querySelector('.cont')
-    cont.addEventListener('click',(event)=>{
-        if (event.target.classList.contains('next')) event.target.parentElement.querySelector('p').innerHTML++
-        if (event.target.classList.contains('prev')) event.target.parentElement.querySelector('p').innerHTML--
-    })
-
+    }
 })
 
+// active_square
